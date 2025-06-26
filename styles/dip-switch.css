@@ -1,0 +1,63 @@
+#converter {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#input-address {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px 0.25rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border-style: solid;
+
+    background-color: var(--background-light);
+    border-color: var(--background-light);
+    color: var(--text-dark);
+    accent-color: var(--accent);
+    caret-color: var(--accent);
+}
+
+#img-container {
+    position: relative;
+    margin-top: min(3em, 5%);
+}
+#switch-base {
+    max-width: 100%;
+    height: auto;
+}
+
+.switch {
+    position: absolute;
+    top: 57%;
+    width: 5.5%;
+    height: auto;
+}
+#switch-1 {
+    left: 4.35%;
+}
+#switch-2 {
+    left: 14.65%;
+}
+#switch-3 {
+    left: 25.4%;
+}
+#switch-4 {
+    left: 36.25%;
+}
+#switch-5 {
+    left: 47.1%;
+}
+#switch-6 {
+    left: 57.9%;
+}
+#switch-7 {
+    left: 68.7%;
+}
+#switch-8 {
+    left: 79.4%;
+}
+#switch-9 {
+    left: 90.2%;
+}
