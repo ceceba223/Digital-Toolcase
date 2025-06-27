@@ -12,6 +12,20 @@
     --success: #80d786;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #171717;
+        --text-dark: #525252;
+        --background: #d1d1d6;
+        --background-light: #a5a5ac;
+        --primary: #2f27ce;
+        --secondary: #b5b4f8;
+        --accent: #000b8a;
+        --error: #ff9292;
+        --success: #80d786;
+    }
+}
+
 body {
     background-color: var(--background);
     color: var(--text);
