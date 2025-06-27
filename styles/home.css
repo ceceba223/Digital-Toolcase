@@ -39,15 +39,15 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 0;
     margin: 0.5rem;
 }
 
-#arrow-svg {
+#settings-svg {
     height: 100%;
     color: var(--text-dark);
 }
-
-#arrow-svg:hover{
+#settings-svg:hover {
     color: var(--text);
 }
 
