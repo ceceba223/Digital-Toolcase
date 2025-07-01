@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/lampen-abstand.css">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Lampen Abstand | Digital Toolcase</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="icon-container">
+        <a href="index.html">
+          <svg id="arrow-svg" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+            <path d="M3.57813 12.4981C3.5777 12.6905 3.65086 12.8831 3.79761 13.0299L9.7936 19.0301C10.0864 19.3231 10.5613 19.3233 10.8543 19.0305C11.1473 18.7377 11.1474 18.2629 10.8546 17.9699L6.13418 13.2461L20.3295 13.2461C20.7437 13.2461 21.0795 12.9103 21.0795 12.4961C21.0795 12.0819 20.7437 11.7461 20.3295 11.7461L6.14168 11.7461L10.8546 7.03016C11.1474 6.73718 11.1473 6.2623 10.8543 5.9695C10.5613 5.6767 10.0864 5.67685 9.79362 5.96984L3.84392 11.9233C3.68134 12.0609 3.57812 12.2664 3.57812 12.4961L3.57813 12.4981Z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+      <h1 class="page-heading">Lampen Abstand</h1>
+    </div>
+
+    <div id="page-content">
+        <form id="calculator">
+            <label for="fixture-amount">Anzahl Fixtures:</label>
+            <input type="number" id="fixture-amount" name="fixture-amount" class="input-field" placeholder="##" min="1" step="1">
+            <small></small>
+            <label for="truss-length">Traversen Länge (m):</label>
+            <input type="number" id="truss-length" name="truss-lenght" class="input-field" placeholder="10">
+            <small></small>
+            <div id="mode-selector-container">
+
+                  <input type="radio" id="on-end" class="mode-selector" name="mode-selector" value="on-end" onclick="showHideDiv()" checked>
+                  <label for="on-end">
+                    <svg class="button-svg" viewBox="0 0 21.167 6.498" fill="none" stroke="" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                      <path style="fill:currentColor;stroke:currentColor;stroke-width:.186809" transform="rotate(-44.899 -8.875 -3.667)" d="M5.695 20.613h1.733v1.733H5.695zM-7.375 7.588h1.733v1.733h-1.733z"/>
+                      <path style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" d="M19.821 8.957v-1.49l-3.208.011.012 6.222 3.196-.012.008-1.472M1.318 8.957v-1.49l3.208.011-.011 6.222-3.197-.012-.008-1.472" transform="translate(0 -7.334)"/>
+                      <path style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:.266865;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M8.979 7.475h3.208v6.218H8.979z" transform="translate(0 -7.334)"/>
+                      <path style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M4.68 10.294h4.118v.579H4.68zM12.303 10.294h4.118v.579h-4.118z" transform="translate(0 -7.334)"/>
+                    </svg>
+                  </label>
+
+                  <input type="radio" id="inset-end" class="mode-selector" name="mode-selector" value="inset-end" onclick="showHideDiv()">
+                  <label for="inset-end">
+                    <svg class="button-svg" viewBox="0 0 21.167 6.485" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                      <path style="fill:currentColor;stroke:currentColor;stroke-width:.186809" transform="rotate(-44.899 -8.884 -3.67)" d="M5.695 20.613h1.733v1.733H5.695zM-7.375 7.588h1.733v1.733h-1.733z"/>
+                      <path style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:.266865;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M8.97 7.475h3.208v6.218H8.97zM13.573 7.475h3.208v6.218h-3.208zM4.367 7.475h3.208v6.218H4.367z" transform="translate(0 -7.341)"/>
+                      <path style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:.153899;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M12.284 10.238h1.165v.69h-1.165zM7.636 10.238h1.165v.69H7.636z" transform="translate(0 -7.341)"/>
+                      <path style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:.159341;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M2.99 10.241h1.259v.684H2.99z" transform="translate(0 -7.341)"/>
+                      <path style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:.153899;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M16.933 10.238h1.165v.69h-1.165z" transform="translate(0 -7.341)"/>
+                    </svg>
+                  </label>
+            </div>
+            <div id="extra-setting" class="hidden-div">
+              <label for="inset-length">Abstand Truss Ende bis 1. Fixture (m):</label>
+              <input type="number" id="inset-length" class="input-field" placeholder="0,5" >
+              <small></small>
+            </div>
+            <input type="submit" id="submit" value="Berechnen">
+            
+            <label for="distance-mid-mid">Abstand (Mitte - Mitte) (m):</label>
+            <output id="distance-mid-mid"></output>
+        </form>
+        <script src="scripts/lamp.js"></script>
+    </div>
+  </body>
+</html>
