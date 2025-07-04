@@ -1,0 +1,17 @@
+<svg width="100.326" height="36.491" viewBox="0 0 26.544 9.655" xmlns="http://www.w3.org/2000/svg">
+    <path style="fill:#000;stroke:#000;stroke-width:.267963;stroke-linecap:round;stroke-linejoin:round" d="M.131 14.919h26.192v.707H.131z" transform="matrix(1.0032 0 0 .46925 .003 -.403)"/>
+    <path style="fill:#000;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" transform="matrix(.8565 .24431 -.52231 .40063 .003 -.403)" d="M20.797 5.339h.452v6.652h-.452zM29.491.037h.452v6.652h-.452zM17.899 7.106h.452v6.652h-.452zM23.695 3.572h.452v6.652h-.452zM12.103 10.641h.452v6.652h-.452zM26.593 1.805h.452v6.652h-.452zM15.001 8.874h.452v6.652h-.452z"/>
+    <g transform="translate(-1.756 -3.83)">
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="7.653" cy="8.589" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="22.403" cy="8.589" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="18.716" cy="8.589" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="15.028" cy="8.589" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="11.34" cy="8.589" rx="1.711" ry="1.614"/>
+    </g>
+    <g transform="translate(.064 -4.963)">
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="7.677" cy="6.71" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="18.74" cy="6.71" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="15.052" cy="6.71" rx="1.711" ry="1.614"/>
+        <ellipse style="fill:none;stroke:#000;stroke-width:.264999;stroke-linecap:round;stroke-linejoin:round" cx="11.365" cy="6.71" rx="1.711" ry="1.614"/>
+    </g>
+</svg>
